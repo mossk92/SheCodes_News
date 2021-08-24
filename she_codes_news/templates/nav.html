@@ -3,7 +3,9 @@
     {% if request.user.is_authenticated %}
         <a href="#">{{ user.username }}</a>
         <button type="submit" onclick="location.href='{% url "logout" %}'">Logout</button>
+        <a href="/users/{{ user.id }}/">Your Profile</a>
     {% else %}
         <button type="submit" onclick="location.href='{% url "login" %}'">Login</button>
+        <a href="/users/create-account/">Create Account</a>
     {% endif %}
 </nav>

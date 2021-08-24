@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="ProfileSummary">
+    <h2> Profile <h2>
+    <p> Username: {{ user.username }} </p>
+    <p> Email: {{ user.email }} </p>
+</div>
+
+
+
+
+<img id="profileimg" src="">
+
+<h2> Hi {{ user.username }}! </h2>
+
+{% comment %} <div class="ProfileSummary">
+    
+    <div class="ProfileOverview">
+        <p>Content Count</p>
+        <p>COUNT OF STORIES</p>
+    </div>  
+    <div class="ProfileOverview">
+        <p>Date Joined</p>
+        <p>DATE JOINED</p>
+    </div>  
+    <div class="ProfileOverview">
+        <p>Last Visited</p>
+        <p>{{ Auth.User.last_login }}</p>
+    </div>  
+</div>   {% endcomment %}
+
+<h3>Your Stories:</h3>
+<div>
+    {% comment %} {% if all_stories %}
+        {% for story in all_stories %}
+            {% include "./storyCard.html" with story=story position=forloop.counter %}
+        {% endfor %}
+    {% else %}
+        <p>You haven't posted any stories.</p>
+    {% endif %} {% endcomment %}
+
+{% endblock content %}
