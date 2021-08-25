@@ -41,9 +41,20 @@ h3 {
     margin: 0;
 }
 
+a {
+    margin: 2px;
+    text-decoration: none;
+    color: #000000;
+}
+
 #header-text {
+    left: 0;
     flex-basis: 80%;
     display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 3vw;
+    padding-left: 5px;
 }
 
 nav {
@@ -53,10 +64,45 @@ nav {
     align-items: flex-end;
 }
 
-a {
-    margin: 2px;
-    text-decoration: none;
+nav a, nav p {
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    text-decoration: none;    
+    font-variant: small-caps;
+    font-size: 100%;
+    position: relative;
+    margin: 0;
+    align-items: center;
     color: #ffffff;
+}
+
+nav p {
+    font-size:150%;
+    font-weight: bold;
+    text-align: right;
+}
+
+nav a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    width: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 25px;
+    right: 0;
+    height: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    height: 100%;
 }
 
 a, p {
