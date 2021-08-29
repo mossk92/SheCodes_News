@@ -56,6 +56,27 @@ h3 {
     text-align: center;
 }
 
+.ProfileSummary {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.ProfileSummary h3{
+    font-size: 150%;
+    color: #7B45A1;
+    font-weight: bold;
+}
+
+.ProfileSummary p{
+    margin-left: 20px;
+}
+
+#my-stories p{
+    margin-left: 50px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
 a {
     margin: 2px;
     text-decoration: none;

@@ -30,7 +30,7 @@
    <h2>Other News</h2>
 
     <div id="all-stories">
-        {% if latest_stories %}
+        {% if remaining_stories %}
             {% for story in remaining_stories %}
                 {% include "./storyCard.html" with story=story %}
             {% endfor %}

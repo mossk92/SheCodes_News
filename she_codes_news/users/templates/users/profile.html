@@ -1,43 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<h2> Profile </h2>
+
 <div class="ProfileSummary">
-    <h2> Profile <h2>
-    <p> Username: {{ user.username }} </p>
-    <p> Email: {{ user.email }} </p>
+    <h3> Username: </h3>
+    <p>{{ user.username }} </p>
+    <h3> Email: </h3>
+    <p> {{ user.email }} </p>
 </div>
 
-
-
-
-<img id="profileimg" src="">
-
-<h2> Hi {{ user.username }}! </h2>
-
-{% comment %} <div class="ProfileSummary">
-    
-    <div class="ProfileOverview">
-        <p>Content Count</p>
-        <p>COUNT OF STORIES</p>
-    </div>  
-    <div class="ProfileOverview">
-        <p>Date Joined</p>
-        <p>DATE JOINED</p>
-    </div>  
-    <div class="ProfileOverview">
-        <p>Last Visited</p>
-        <p>{{ Auth.User.last_login }}</p>
-    </div>  
-</div>   {% endcomment %}
-
-<h3>Your Stories:</h3>
-<div>
-    {% comment %} {% if all_stories %}
-        {% for story in all_stories %}
-            {% include "./storyCard.html" with story=story position=forloop.counter %}
+<h2>Your Stories:</h2>
+<div id="my-stories">
+    {% if remaining_stories %}
+        {% for story in remaining_stories %}
+            {% include "./storyCard.html" with story=story %}
         {% endfor %}
     {% else %}
-        <p>You haven't posted any stories.</p>
-    {% endif %} {% endcomment %}
+        <p>Sorry this section is not working at the moment.</p>
+    {% endif %}
+</div>
 
 {% endblock content %}
