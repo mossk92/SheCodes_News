@@ -7,8 +7,10 @@
 {% endblock %}
 
 {% block content %}
-    
-    <a href="{% url 'news:newStory' %}">Write New Story</a>
+
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'news:newStory' %}">Write New Story</a>
+    {% endif %}
 
     <h2>Latest News</h2>
 
@@ -22,9 +24,11 @@
         {% endif %}
     </div>
 
+   <h2>Older News</h2>
+
     <div id="all-stories">
         {% if latest_stories %}
-            {% for story in all_stories %}
+            {% for story in remaining_stories %}
                 {% include "./storyCard.html" with story=story %}
             {% endfor %}
         {% else %}

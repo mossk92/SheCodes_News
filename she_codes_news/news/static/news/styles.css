@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap');
+
 .story-card {
     margin: 2px;
-    border: 1px solid #000;
-    padding: 5px;
+    border: 1px solid #F9A626;
+    /* padding: 5px; */
 }
 
 .story-card img {
@@ -12,32 +14,32 @@
 
 #latest-stories {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
     gap: 1px 1px;
     grid-template-areas: "left-1 right-1" "left-1 right-2" "left-1 right-3";
     max-height: 500px;
 }
 
-#story-card-1 {
-    grid-area: left-1;
+.storycard-header {
+    margin: 0;
 }
 
-#story-card-2 {
-    grid-area: right-1;
+.story-card-text h3 {
+    background-color: #F9A626;
+    color: #ffffff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 2px;
 }
 
-#story-card-3 {
-    grid-area: right-2;
+.story-card-text h4 {
+    color: #7B45A1;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 5px 0px 10px 10px;
 }
 
-#story-card-4 {
-    grid-area: right-3;
-}
-
-#story-card-2 a,
-#story-card-3 a,
-#story-card-4 a {
+/* #story-card-2 a,
+#story-card-3 a {
     display: flex;
     max-height: 120px;
     width: 100%;
@@ -45,23 +47,22 @@
 }
 
 #story-card-2 .story-card-text h3,
-#story-card-3 .story-card-text h3,
-#story-card-4 .story-card-text h3 {
+#story-card-3 .story-card-text h3 {
     font-size: 16px;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 #story-card-2 .story-card-text h4,
-#story-card-3 .story-card-text h4,
-#story-card-4 .story-card-text h4 {
+#story-card-3 .story-card-text h4 {
     font-size: 12px;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 #story-card-2 img,
-#story-card-3 img,
-#story-card-4 img {
+#story-card-3 img {
     width: 33%;
     height: 100%;
-    margin-right: 5px;
+    margin-right: 5px; */
 }
 
 #all-stories {
