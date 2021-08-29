@@ -46,6 +46,16 @@ h3 {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
+#Welcome-Intro {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #7B45A1;
+    text-align: center;
+}
+
 a {
     margin: 2px;
     text-decoration: none;
@@ -163,6 +173,21 @@ form textarea:focus {
     color: #7B45A1;
 }
 
+button {
+    border: 0;
+    background: #F9A626;
+    color: #ffffff;
+    width: 200px;
+    height: 30px;
+    border-radius:  20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
 form button {
     float: right;
     border: 0;
@@ -176,6 +201,7 @@ form button {
     border: none;
 }
 
+button:hover,
 form button:hover {
     background: #7B45A1;
     font-weight: 900;
