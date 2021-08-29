@@ -117,9 +117,12 @@ nav a:hover::before {
 form {
     max-width: 50%;
     margin-left: 10%;
+    margin-bottom: 10%;
 }
 
-form p {
+form p,
+form span,
+form ul {
     font-family: 'Bai Jamjuree', sans-serif; 
 }
 
@@ -135,6 +138,18 @@ form p input {
     color: #5A5A5A;
     transition: 0.5s;
     border-radius: 5px;
+}
+
+form span {
+    font-size: 80%;
+    font-style: italic;
+    margin-left: 20px;
+}
+form ul {
+    font-size: 80%;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 form input:hover {
