@@ -99,7 +99,7 @@ nav a, nav p {
 
 nav p {
     font-size:150%;
-    font-weight: bold;
+    font-weight: 900;
     text-align: right;
 }
 
@@ -136,7 +136,8 @@ form ul {
     font-family: 'Bai Jamjuree', sans-serif; 
 }
 
-form p input {
+form p input,
+form p textarea {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -176,7 +177,7 @@ form textarea:focus {
 button {
     border: 0;
     background: #F9A626;
-    color: #ffffff;
+    color: #7B45A1;
     width: 200px;
     height: 30px;
     border-radius:  20px;

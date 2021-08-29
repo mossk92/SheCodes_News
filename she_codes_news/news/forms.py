@@ -6,6 +6,6 @@ class StoryForm(ModelForm):
     class Meta:
         model = NewsStory
         fields = ['title', 'pub_date', 'content', 'img_upload']
-        widgets = {'pub_date': forms.DateInput(format=('%m/%d/%Y'),
-        attrs={'class':'form-control', 'placeholder':'Select a date','type':'date'}),
+        widgets = {'pub_date': forms.DateInput(format=('%m/%d/%Y %H:%M'),
+        attrs={'class':'form-control', 'placeholder':'Select a date','type':'datetime-local'}),
         }
