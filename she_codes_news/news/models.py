@@ -9,7 +9,7 @@ class NewsStory(models.Model):
     )
     pub_date = models.DateTimeField()
     content = models.TextField()
-    img_url = models.ImageField(upload_to='images')
+    img_url = models.ImageField(upload_to='media')
     
     # class Meta:
     #     ordering = ['-pub_date']

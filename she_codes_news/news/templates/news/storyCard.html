@@ -1,6 +1,9 @@
+{% load MEDIA_ROOT %}
+
 <div class="story-card" id="story-card-{{ position }}">
     <a href="{% url 'news:story' story.id %}">
-        <img src="{{ story.img_url }}"> #img_url doesn't seem to link
+        {% comment %} <img src="../../media/{{ story.img_url }}"> {% endcomment %}
+        <img src="{% MEDIA_ROOT '/IMG_2671.jpeg' %}">
         <div class="story-card-text">
             <h3>{{ story.title }}</h3>
             <h4>{{ story.author }}</h4>
